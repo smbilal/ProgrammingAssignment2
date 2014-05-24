@@ -5,7 +5,7 @@
 
 
 ## In "makeCacheMatrix" we are creating a matrix by either passing arguments along with the function call or by calling the "set"
-## method.It further saves the value of the inverse into a variable using "setinverse" and "getinverse" is used to retrieve the value 
+## method.It further saves the value of the inverse into a variable/cache using "setinverse" and "getinverse" is used to retrieve the value 
 ## of inverse from the cache
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -24,7 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## In "cacheSolve" we are first checking if the inverse of the matrix already exists in cahce and if it does,
+## In "cacheSolve" we are first checking if the inverse of the matrix created by "makeCacheMatrix" already exists in cahce and if it does,
 ## the value is pulled from cache for output. Otherwise, it computes the inverse and returns the inversed matrix
 
 cacheSolve <- function(x, ...) {
