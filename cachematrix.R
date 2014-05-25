@@ -1,5 +1,5 @@
 
-## The functions are creating a matrix, calculating its inverse and then storing it into
+## The functions are creating a matrix, calculating its inverse and then storing it into 
 ## the cache for future retrievel requests. The second function first checks if the inverse already exists
 ## in the cache and if it does, it skips the computation and simply pulls the output from cache provided
 ## the contents of the matrix are the same
